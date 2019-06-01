@@ -1,0 +1,28 @@
+<ion-app>
+    <ion-split-pane>
+      <ion-menu>
+        <ion-header no-border>
+          <ion-toolbar class="header-gradient">
+     <ion-avatar class="avatar">
+                  <ion-img class="menu-image" src="/assets/téléchargement.png"></ion-img>
+                </ion-avatar>
+            <ion-title text-center class="title">Majdi Ben Younes</ion-title>
+            <h3>majdi.benyounes1@gmail.com</h3>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="gradient">
+          <ion-list lines="none">
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+              <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+                <ion-icon color="light" slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title}}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      <ion-router-outlet main></ion-router-outlet>
+    </ion-split-pane>
+  </ion-app>

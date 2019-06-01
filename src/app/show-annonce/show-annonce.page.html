@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-button color="danger"  [href]="'/annonce'" routerDirection="backword">
+        <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-title>{{ annonce.type }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card" >
+    <ion-card-header>
+      <ion-card-subtitle>{{annonce.date | date }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-img src="{{annonce.image}}"></ion-img>
+    <ion-card-content>
+      <p>{{ annonce.description }}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

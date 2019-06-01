@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Reclamation</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="reclamation">
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div padding>
+              <ion-item>
+                  <ion-label position="floating"><b>Titre</b></ion-label>
+                <ion-input  name="titre" type="text" placeholder="" ></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Date du dépôt</b></ion-label>
+                <ion-input  name="date" type="date" placeholder=""></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Description</b></ion-label>
+                  <ion-textarea></ion-textarea>
+              </ion-item>
+              <div padding>
+                  <ion-button   type="submit"  tappable (click)='alertAction()' [href]="'/annonce'" expand="block">Envoyer</ion-button>
+                </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

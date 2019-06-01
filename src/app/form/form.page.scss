@@ -1,0 +1,28 @@
+.gradient2 {
+    --background: #3880ff !important;  
+    --background: -webkit-linear-gradient(to left, #1488CC, #2B32B2) !important;  
+    --background: linear-gradient(to left, #1488CC, #2B32B2)!important; 
+
+ion-item, ion-row{
+    --background: #3880ff !important;  
+    --background: -webkit-linear-gradient(to left, #1488CC, #2B32B2) !important;  
+    --background: linear-gradient(to left, #1488CC, #2B32B2)!important;
+    color: white;
+}
+
+}
+    
+    ion-button{
+        --background: #1f60c0;
+        color: white;
+    }
+    
+p {
+    color :white;
+}
+h3 {
+    font-size: 25px;
+}
+a {
+   color: #0e2348;
+}

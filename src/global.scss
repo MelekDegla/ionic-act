@@ -1,0 +1,156 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+
+/**$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+$SIDEMENU_TOP: #ff4b1f;
+$SIDEMENU_BOTTOM: #ff9068;
+
+
+
+//MENU HEADER 
+
+
+.menu-image ion-img{
+        border-radius:50%;
+        margin:10px;
+        border: 4px solid $SIDEMENU_TRANSPARENCY;
+        -webkit-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+
+}
+.menu-header ion-toolbar{
+    --background: var(--ion-background-color,#3880ff) !important;
+}
+.menu-header ion-title{
+text-align:center;
+color: white;
+}
+
+
+//MENU CONTENT
+.menu-content ion-item{
+                --background: var(--ion-background-color,#3880ff) !important;
+                  color: white;    
+    }
+.menu-content ion-icon{
+        color: white;
+    }
+    
+
+.menu-content {
+    --background: var(--ion-background-color,#3880ff) !important; 
+}
+**/
+
+
+/**Sidemenu with avatar
+.menu-avatar {
+    .user-avatar {
+      max-width: 125px;height: 125px;
+      padding: .5em;
+    }
+    h2
+    {
+      color: blue;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 50px;
+    }
+    ion-list {
+      background: transparent;
+    }
+    ion-content {
+  
+      background: #649173;  
+      background: -webkit-linear-gradient(to left, #DBD5A4, #649173);  
+      background: linear-gradient(to left, #DBD5A4, #649173); 
+    }
+
+  }
+  **/
+  
+
+  /**.menu {
+    background-color: #3880ff !important;
+    color: #ffffff;
+    .scroll-content {
+      background-color: #3880ff !important;
+    }
+    ion-item ,ion-list{
+        color:#ffffff;
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+}**/
+.header-gradient {
+  //gradient
+    --background: #3880ff !important;  
+    --background: -webkit-linear-gradient(to left, #1488CC, #2B32B2) !important;  
+    --background: linear-gradient(to left, #1488CC, #2B32B2)!important; 
+    //position
+     padding-bottom: 35px;
+     border-bottom:1px solid #4182af;
+}
+.gradient {
+      --background: #3880ff !important;  
+      --background: -webkit-linear-gradient(to left, #1488CC, #2B32B2) !important;  
+      --background: linear-gradient(to left, #1488CC, #2B32B2)!important; 
+
+
+  ion-list{/* optional, but it needs when you use gradient as a background color.*/
+    --background: transparent !important;
+    padding:0px;
+  }
+  ion-item{
+      --background: #3880ff !important;  
+      --background: -webkit-linear-gradient(to left, #1488CC, #2B32B2) !important;  
+      --background: linear-gradient(to left, #1488CC, #2B32B2)!important;
+      color: white;
+  }
+
+}
+  .avatar {
+    margin:auto;
+    border: 3px solid #6fa9ce;
+        -webkit-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+        margin-bottom: 14px;
+        margin-top: 5px;
+  }
+  .item-md .avatar img {
+    width: auto !important;
+    height: auto !important;
+}
+  ion-title{
+    color:white;
+  }
+  h3 {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+  }
+  .ios .title{
+    color: white !important;
+    margin-top: 18px;
+
+  }
+  .ios h3{
+  font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+  }
+  

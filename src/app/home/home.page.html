@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Modifier le profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="home">
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div padding>
+              <ion-item>
+                  <ion-label position="floating"><b>Prénom</b></ion-label>
+                <ion-input  name="nv_prenom" type="text" placeholder="" ></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Nom</b></ion-label>
+                <ion-input  name="nv_nom" type="text" placeholder=""></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Ajouter une photo</b></ion-label>
+                  <ion-card>
+                      <!-- <img *ngIf="!fileUrl" src="assets/téléchargement.png"/>
+                      <img *ngIf="fileUrl" src="{{fileUrl}}"/> -->
+                      <ion-card-content>
+                        <ion-button color="medium" size="large" (click)="cropUpload()">
+                          <ion-icon slot="icon-only" name="camera"></ion-icon>
+                        </ion-button>
+                      </ion-card-content>
+                    </ion-card>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Mot de passe actuel</b></ion-label>
+                  <ion-input name="nv_motdepasse" type="password" placeholder=""></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Nouveau mot de passe</b></ion-label>
+                  <ion-input name="nv_motdepasse" type="password" placeholder=""></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label position="floating"><b>Confirmer le nouveau mot de passe</b></ion-label>
+                  <ion-input name="nv_motdepasse" type="password" placeholder=""></ion-input>
+              </ion-item>
+              <div padding>
+                  <ion-button   type="submit"   [href]="'/annonce'" expand="block">Enregistrer les modifications</ion-button>
+                </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
