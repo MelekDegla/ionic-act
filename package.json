@@ -45,7 +45,7 @@
     "cordova-plugin-telerik-imagepicker": "2.3.2",
     "core-js": "^2.6.8",
     "ionic-angular": "^3.9.6",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.5.2",
